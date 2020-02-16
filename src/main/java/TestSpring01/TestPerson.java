@@ -17,7 +17,7 @@ public class TestPerson {
     @Scope("prototype")
     @Bean(initMethod = "init",destroyMethod = "destory")
     public  Student student(){
-        return  new Student(15,"sb");
+        return  new Student(115,"sb");
     }
 
 }
