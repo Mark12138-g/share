@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-@ComponentScan("com.")
+@ComponentScan("com")
 @Configuration
 public class TestPerson {
     @Bean("a1")
@@ -17,7 +17,7 @@ public class TestPerson {
     @Scope("prototype")
     @Bean(initMethod = "init",destroyMethod = "destory")
     public  Student student(){
-        return  new Student(115,"sb");
+        return  new Student(10000,"sb");
     }
 
 }
